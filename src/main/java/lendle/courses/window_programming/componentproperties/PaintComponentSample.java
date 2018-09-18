@@ -17,6 +17,13 @@ import javax.swing.WindowConstants;
  * @author lendle
  */
 public class PaintComponentSample extends JPanel{
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        int a=getWidth();
+        int b=getHeight();
+        g.drawOval(0, 0, a, b);
+    }
     //利用 paintComponent 讓 JPanel 畫出一個橢圓
     
     //////////////////////////////////////////
